@@ -1,0 +1,30 @@
+ body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      min-height: 75%;
+    }
+
+    #inicio {
+      background-image: url("https://images.pexels.com/photos/6653905/pexels-photo-6653905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+    
+    #produtos {
+      background-image: url("https://images.pexels.com/photos/3735147/pexels-photo-3735147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    #receitas {
+      background-image: url("https://images.pexels.com/photos/29666891/pexels-photo-29666891/free-photo-of-tomando-cafe-enquanto-assa-pao-lendo-receitas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    #contato {
+      background-image: url("https://images.pexels.com/photos/1275929/pexels-photo-1275929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    }
+
+    .menu {
+      display: none;
+    }
