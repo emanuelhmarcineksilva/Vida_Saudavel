@@ -10,7 +10,7 @@
     }
 
     #inicio {
-      background-image: url("https://images.pexels.com/photos/6653905/pexels-photo-6653905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-image: url("https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     }
     
     #produtos {
@@ -22,7 +22,7 @@
     }
 
     #contato {
-      background-image: url("https://images.pexels.com/photos/1275929/pexels-photo-1275929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-image: url("https://images.pexels.com/photos/681391/pexels-photo-681391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     }
 
     .menu {
@@ -40,10 +40,22 @@
     margin: 0 auto;
 }
 
+.doc {
+    margin: auto auto auto 3em;
+}
+
   .pic {
-    width: 80%;
+    width: 100%;
     height: 10em;
-    width: 10em;
+    width: 14em;
+  }
+
+  .titulodescricaoimagem {
+    text-align: center;
+  }
+
+  .descricaoimagem {
+    color: brown;
   }
 
   @keyframes display {
@@ -95,3 +107,87 @@
   img:nth-child(5) {
     animation-delay: 8s;
   }
+
+/* Promoções */
+
+
+
+
+
+
+/* Produtos */
+
+.container-produtos {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-produto {
+  display: flex;
+  justify-content: space-between;
+  margin: 4em auto;
+  margin: auto 2em;
+}
+
+.coluna-produto {
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
+  margin: 2em;
+  transition: all 0.8s;
+}
+
+.coluna-produto:hover {
+  scale: 1.2;
+  box-shadow: 2px 2px 15px rgb(0, 0, 0, 0.8);
+}
+
+.imagem-produto {
+  width: 12vw;
+  height: 22vh;
+}
+
+.titulo-produto-coluna {
+  font-size: 1.2em;
+  margin-top: -0.2em;
+}
+
+.preco {
+  margin-right: 2em;
+  margin-top: -0.4em;
+  font-size: 1.2em;
+}
+
+.peso {
+  font-size: 1em;
+  margin: -2em auto 1em 5em;
+}
+
+.promo {
+  background-color: rgb(236, 96, 96);
+  color: black;
+  position: absolute;
+  padding: 1px 4px;
+}
+
+/* Receitas */
+
+.livro-de-receitas {
+  margin-left: 2em;
+  float: left;
+  width: 40%;
+}
+
+.bloco-receita {
+  width: 50%;
+  float: right;
+}
+
+#pao-castanha {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
