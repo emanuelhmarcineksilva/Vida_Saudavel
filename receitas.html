@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
 <body>
 
@@ -47,7 +47,7 @@
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Receitas</span></h5>
     <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
@@ -62,21 +62,21 @@
 
 <!-- Menu Container -->
 <div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content livro-de-receitas">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Livro de Receitas</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+        <div class="w3-col s6 tablink">Pão</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+        <div class="w3-col s6 tablink">Bolo</div>
       </a>
     </div>
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
+      <button id="pao-castanha"><h5>Bread Basket</h5></button>
       <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
     
       <h5>Honey Almond Granola with Fruits</h5>
@@ -108,9 +108,22 @@
       <h5>Soda</h5>
       <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
     </div>  
-    <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+  <div class="bloco-receita">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Pão Castanha</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <p>Receita</p>
+    </div>
+
+    <div id="pao-castanha" class="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officia deserunt quae et libero voluptates cumque molestiae recusandae dignissimos aperiam dolore suscipit id expedita impedit nihil assumenda. Nisi, dolorum libero!</p>
+    </div>
   </div>
 </div>
+
+
 
 <!-- End page content -->
 </div>
