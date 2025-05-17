@@ -76,62 +76,241 @@
     </div>
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <button id="pao-castanha"><h5>Bread Basket</h5></button>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('pao-castanha')"><h5>Pão de Castanhas</h5></button>
+      <p class="w3-text-grey">Rico em fibras, minerais e gorduras boas, esse pão é ideal para quem busca sabor e nutrição no dia a dia!</p><br>
     
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('pao-de-aveia')"><h5>Pão de Aveia</h5></button>
+      <p class="w3-text-grey">Simples, leve e nutritivo, o pão de aveia ajuda a regular o intestino e dá mais saciedade.</p><br>
     
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('pao-verde')"><h5>Pão Verde</h5></button>
+      <p class="w3-text-grey">Colorido naturalmente e cheio de clorofila, fortalece o sistema imunológico e ainda é delicioso.</p><br>
     
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('pao-arroz')"><h5>Pão de Arroz</h5></button>
+      <p class="w3-text-grey">Uma opção sem glúten, leve e fácil de digerir, perfeita para dietas mais equilibradas.</p><br>
     </div>
 
     <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('bolo-cacau')"><h5>Bolo de cacau 70%</h5></button>
+      <p class="w3-text-grey">Com alto teor de antioxidantes, esse bolo é uma indulgência saudável que também faz bem ao coração.</p><br>
     
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('bolo-coco')"><h5>Bolo com Farinha de Coco</h5></button>
+      <p class="w3-text-grey">Feito com ingredientes naturais, é fonte de boas gorduras e energia — ótimo para o café da tarde!</p><br>
     
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('bolo-maca')"><h5>Bolo com Farinha de Maçã</h5></button>
+      <p class="w3-text-grey">Ajuda na digestão e é excelente para manter o intestino em dia com um sabor suave e equilibrado.</p><br>
     
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+      <button class="botao-receitas-escolher" onclick="trocarReceita('bolo-tamara')"><h5>Bolo de Tâmaras</h5></button>
+      <p class="w3-text-grey">Naturalmente adocicado e cheio de energia, é perfeito para quem quer evitar o açúcar sem abrir mão do sabor.</p><br>
     </div>  
   </div>
   <div class="bloco-receita">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Pão Castanha</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <p>Receita</p>
+<!-- Receitas de Pão -->
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Modo de Preparo</span></h5>
+   <div id="pao-castanha" class="w3-card descricao-receita">
+    <div class="w3-center">
+      <p class="titulo-receita">Pão de Castanhas</p>
     </div>
 
-    <div id="pao-castanha" class="">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officia deserunt quae et libero voluptates cumque molestiae recusandae dignissimos aperiam dolore suscipit id expedita impedit nihil assumenda. Nisi, dolorum libero!</p>
+      <ul>
+        <li><h3 class="ingredientes">1 xícara de farinha de aveia</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de farinha de arroz</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de castanhas-do-pará picadas</h3></li>
+        <li><h3 class="ingredientes">1/4 xícara de castanha de caju triturada</h3></li>
+        <li><h3 class="ingredientes">2 colheres (sopa) de linhaça dourada</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de psyllium (opcional, para textura)</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de sal marinho</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento biológico seco</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de açúcar mascavo</h3></li>
+        <li><h3 class="ingredientes">1 xícara de água morna</h3></li>
+        <li><h3 class="ingredientes">2 colheres (sopa) de azeite de oliva</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Misture o fermento com o açúcar e a água morna. Deixe ativar por 10 minutos.</p>
+        <p class="modo-de-preparo">Em uma tigela grande, misture todas as farinhas, castanhas e os demais ingredientes secos.</p>
+        <p class="modo-de-preparo">Adicione a mistura de fermento e o azeite. Misture até formar uma massa cremosa e firme.</p>
+        <p class="modo-de-preparo">Coloque em forma untada e deixe descansar por 40 minutos, coberta com um pano.</p>
+        <p class="modo-de-preparo">Asse em forno pré-aquecido a 180°C por aproximadamente 35 minutos ou até dourar.</p>
+      </div>
+    </div>
+
+    <div id="pao-de-aveia"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Pão de Aveia</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">2 xícaras de farinha de aveia</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de polvilho doce</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de linhaça dourada</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de sal</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento biológico seco</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de açúcar mascavo</h3></li>
+        <li><h3 class="ingredientes">1 xícara de água morna</h3></li>
+        <li><h3 class="ingredientes">1/4 xícara de azeite</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Misture o fermento, açúcar e água morna. Deixe descansar por 10 minutos.</p>
+        <p class="modo-de-preparo">Em uma tigela, junte os ingredientes secos. Adicione o azeite e a mistura do fermento.</p>
+        <p class="modo-de-preparo">Mexa até formar uma massa homogênea.</p>
+        <p class="modo-de-preparo">Coloque em forma untada, cubra com pano e deixe crescer por 40 minutos.</p>
+        <p class="modo-de-preparo">Asse a 180°C por 30–35 minutos.</p>
+      </div>
+    </div>
+
+    <div id="pao-verde"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Pão Verde</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1 xícara de farinha de arroz</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de fécula de batata</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de spirulina em pó</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de psyllium</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de sal</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento biológico seco</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de açúcar de coco</h3></li>
+        <li><h3 class="ingredientes">1 xícara de água morna</h3></li>
+        <li><h3 class="ingredientes">1/4 xícara de azeite</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Ative o fermento com água morna e açúcar por 10 minutos.</p>
+        <p class="modo-de-preparo">Misture todos os ingredientes secos.</p>
+        <p class="modo-de-preparo">Acrescente a mistura do fermento e o azeite. Misture bem.</p>
+        <p class="modo-de-preparo">Deixe a massa descansar por 30 minutos em local abafado.</p>
+        <p class="modo-de-preparo">Leve ao forno pré-aquecido (180°C) por 30 minutos.</p>
+      </div>
+    </div>
+
+    <div id="pao-arroz"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Pão de Arroz</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1 e 1/2 xícara de farinha de arroz</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de polvilho doce</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de chia</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de sal</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento biológico seco</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de açúcar mascavo</h3></li>
+        <li><h3 class="ingredientes">1 xícara de água morna</h3></li>
+        <li><h3 class="ingredientes">3 colheres (sopa) de azeite de oliva</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Misture o fermento, açúcar e água morna. Aguarde 10 minutos.</p>
+        <p class="modo-de-preparo">Em uma tigela, misture os ingredientes secos.</p>
+        <p class="modo-de-preparo">Adicione o azeite e a mistura do fermento aos secos, misture até ficar homogêneo.</p>
+        <p class="modo-de-preparo">Transfira para uma forma pequena untada e cubra por 30 minutos para crescer.</p>
+        <p class="modo-de-preparo">Asse a 180°C por 30–35 minutos.</p>
+    </div>
+  </div>
+
+
+<!-- Receitas de Bolo -->
+
+    <div id="bolo-cacau"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Bolo de cacau 70%</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1/2 xícara de cacau 70% em pó</h3></li>
+        <li><h3 class="ingredientes">1 xícara de farinha de aveia</h3></li>
+        <li><h3 class="ingredientes">3 ovos</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de açúcar mascavo ou demerara</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de óleo de coco</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de leite vegetal</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento em pó</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Bata os ovos, açúcar e óleo de coco.</p>
+        <p class="modo-de-preparo">Adicione o leite, a farinha e o cacau peneirado, misturando bem.</p>
+        <p class="modo-de-preparo">Acrescente o fermento por último e mexa delicadamente.</p>
+        <p class="modo-de-preparo">Despeje a massa em forma untada e leve ao forno (180°C) por 30 minutos.</p>
+      </div>
+    </div>
+
+    <div id="bolo-coco"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Bolo de Farinha de Coco</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1/2 xícara de farinha de coco</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de farinha de arroz</h3></li>
+        <li><h3 class="ingredientes">3 ovos</h3></li>
+        <li><h3 class="ingredientes">1/4 xícara de óleo de coco</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de mel ou melado</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de canela em pó</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de leite vegetal</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento em pó</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Misture os ovos, melado e óleo de coco até ficar homogêneo.</p>
+        <p class="modo-de-preparo">Adicione os ingredientes secos alternando com o leite.</p>
+        <p class="modo-de-preparo">Misture bem e finalize com o fermento.</p>
+        <p class="modo-de-preparo">Asse em forma pequena untada a 180°C por 30 minutos.</p>
+      </div>
+    </div>
+
+    <div id="bolo-maca"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Bolo de Fibra de Maçã</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1 xícara de farinha de aveia</h3></li>
+        <li><h3 class="ingredientes">2 colheres (sopa) de fibra de maçã</h3></li>
+        <li><h3 class="ingredientes">2 ovos</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de açúcar mascavo</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de óleo de girassol</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de leite vegetal</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de canela em pó</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento em pó</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Bata os ovos com o açúcar, adicione o óleo e misture bem.</p>
+        <p class="modo-de-preparo">Adicione a farinha, fibra de maçã, canela e o leite vegetal aos poucos.</p>
+        <p class="modo-de-preparo">Misture até ficar homogêneo e incorpore o fermento.</p>
+        <p class="modo-de-preparo">Despeje em forma untada e asse a 180°C por 30 a 35 minutos.</p>
+    </div>
+  </div>
+
+  <div id="bolo-tamara"  class="w3-card descricao-receita">
+      <div class="w3-center">
+      <p class="titulo-receita">Bolo de Tâmaras</p>
+    </div>
+      <ul>
+        <li><h3 class="ingredientes">1 xícara de tâmaras sem caroço picadas</h3></li>
+        <li><h3 class="ingredientes">1/2 xícara de água quente</h3></li>
+        <li><h3 class="ingredientes">2 ovos</h3></li>
+        <li><h3 class="ingredientes">1/3 xícara de óleo de coco</h3></li>
+        <li><h3 class="ingredientes">1 xícara de farinha de aveia</h3></li>
+        <li><h3 class="ingredientes">1 colher (chá) de canela</h3></li>
+        <li><h3 class="ingredientes">1 colher (sopa) de fermento em pó</h3></li>
+      </ul>
+
+      <div class="caixa-modo-de-preparo">
+        <p class="modo-de-preparo">Deixe as tâmaras de molho na água quente por 10 minutos e depois bata no liquidificador com os ovos e o óleo de coco.</p>
+        <p class="modo-de-preparo">Transfira para uma tigela e misture a farinha, canela e fermento.</p>
+        <p class="modo-de-preparo">Mexa até a massa ficar uniforme e despeje em forma untada.</p>
+        <p class="modo-de-preparo">Asse a 180°C por cerca de 30 minutos.</p>
     </div>
   </div>
 </div>
-
-
+</div>
 
 <!-- End page content -->
 </div>
 
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>This website was made with W3schools Spaces. Make your own free website today!</p>
-  <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+<footer class="w3-center w3-padding-48 w3-large">
+  <p>Obrigado por ver o Site!</p>
+  <p>&#169; Vida Saudável - 2025</p>
  <!-- Footer end. -->
  </footer>
 
@@ -151,6 +330,18 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+let receitaAtual = 'pao-castanha';
+
+function trocarReceita(receitaNova) {
+  if (receitaNova === receitaAtual) return;
+
+  document.getElementById(receitaAtual).style.display = 'none';
+  document.getElementById(receitaNova).style.display = 'block';
+
+  receitaAtual = receitaNova;
+}
+
 </script>
 
 </body>
