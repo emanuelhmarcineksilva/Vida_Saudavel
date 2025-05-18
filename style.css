@@ -42,6 +42,20 @@
 
 /* Carrocel de imagens */
 
+.coluna-produto-carrocel{
+  text-align: center;
+  width: 11vw;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
+  margin: 0 auto auto 2.3em;
+  transition: all 0.5s;
+}
+
+.coluna-produto-carrocel:hover {
+  scale: 1.2;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.8);
+}
+
 .carrossel {
     margin: 0 auto;
 }
@@ -116,6 +130,9 @@
 
 /* Promoções */
 
+.produtos-carrocel {
+  text-decoration: none;
+}
 
 /* Produtos */
 
