@@ -44,6 +44,7 @@
 
 .coluna-produto-carrocel{
   text-align: center;
+  min-width: 140px;
   width: 11vw;
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
@@ -151,6 +152,7 @@
 
 .coluna-produto {
   text-align: center;
+  min-width: 120px;
   width: 11vw;
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
@@ -286,4 +288,17 @@ footer {
   margin-top: 2em;
   color: white;
   background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .livro-de-receitas {
+  margin: 0;
+  float: none;
+  width: 100%;
+}
+
+.bloco-receita {
+  width: 100%;
+  float: none;
+}
 }
