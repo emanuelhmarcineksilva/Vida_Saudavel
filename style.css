@@ -147,6 +147,7 @@
 .container-produto {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 1em auto;
 }
 
@@ -285,9 +286,12 @@
 
 
 footer {
-  margin-top: 2em;
   color: white;
   background-color: black;
+}
+
+.espaco-antes-do-rodape{
+  padding: 1em;
 }
 
 @media screen and (max-width: 800px) {
@@ -300,5 +304,10 @@ footer {
 .bloco-receita {
   width: 100%;
   float: none;
+}
+
+.promocoes {
+  display: none;
+  background-color: aqua;
 }
 }
