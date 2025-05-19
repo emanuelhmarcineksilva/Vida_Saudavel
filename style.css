@@ -221,6 +221,12 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  border-radius: 2px;
+}
+
+.botao-receitas-escolher:focus {
+  background-color: rgb(112, 112, 112);
+  color: white;
 }
 
 .titulo-receita {
@@ -308,6 +314,5 @@ footer {
 
 .promocoes {
   display: none;
-  background-color: aqua;
 }
 }
